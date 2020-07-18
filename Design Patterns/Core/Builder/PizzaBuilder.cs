@@ -9,10 +9,21 @@ namespace Design_Patterns.Core.Builder
     class PizzaBuilder : IPizzaBuilder
     {
         private Pizza _pizza = new Pizza();
+        private static PizzaBuilder _instance;
 
-        public PizzaBuilder()
+        private PizzaBuilder()
         {
             this.reset();
+        }
+
+        public static PizzaBuilder getInstance()
+        {
+            if(_instance == null)
+            {
+                _instance = new PizzaBuilder();
+            }
+
+            return _instance;
         }
 
         public void reset()
@@ -92,6 +103,11 @@ namespace Design_Patterns.Core.Builder
         public void bake()
         {
             this._pizza.Add("Bake");
+        }
+
+        public void putMozzarella()
+        {
+            this._pizza.Add("Mozzarella");
         }
     }
 }

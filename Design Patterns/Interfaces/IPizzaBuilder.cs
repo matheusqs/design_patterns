@@ -19,6 +19,7 @@ namespace Design_Patterns.Interfaces
         public void putCheedar();
         public void putCatupiry();
         public void putOregano();
+        public void putMozzarella();
         public void bake();
     }
 }

@@ -18,6 +18,8 @@ namespace Design_Patterns.Core.Builder
         {
             this._pizzaBuilder.prepareDough();
             this._pizzaBuilder.prepareSauce();
+            this._pizzaBuilder.putMozzarella();
+            this._pizzaBuilder.putOregano();
             this._pizzaBuilder.putChicken();
             this._pizzaBuilder.putCatupiry();
             this._pizzaBuilder.bake();
@@ -27,6 +29,8 @@ namespace Design_Patterns.Core.Builder
         {
             this._pizzaBuilder.prepareDough();
             this._pizzaBuilder.prepareSauce();
+            this._pizzaBuilder.putMozzarella();
+            this._pizzaBuilder.putOregano();
             this._pizzaBuilder.putPepperoni();
             this._pizzaBuilder.putCatupiry();
             this._pizzaBuilder.putCheedar();

@@ -1,6 +1,7 @@
 ﻿using Design_Patterns.Core;
 using Design_Patterns.Core.Builder;
 using Design_Patterns.Core.Factory;
+using Design_Patterns.Core.Singleton;
 using System;
 
 namespace Design_Patterns
@@ -14,6 +15,7 @@ namespace Design_Patterns
             Console.WriteLine("Estudo sobre Padroes de Projeto, selecione o programa para executar: ");
             Console.WriteLine("1 - Factory");
             Console.WriteLine("2 - Builder");
+            Console.WriteLine("3 - Singleton");
 
             var result = Console.ReadLine();
 
@@ -24,6 +26,9 @@ namespace Design_Patterns
                     break;
                 case "2":
                     creator = new CreatorBuilder();
+                    break;
+                case "3":
+                    creator = new CreatorSingleton();
                     break;
                 default:
                     throw new Exception("Padrao nao implementado.");

@@ -10,7 +10,7 @@ namespace Design_Patterns.Core.Builder
         public void execute()
         {
             var director = new PizzaDirector();
-            var builder = new PizzaBuilder();
+            var builder = PizzaBuilder.getInstance();
 
             director.pizzaBuilder = builder;
 

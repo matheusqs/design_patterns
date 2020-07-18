@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Design_Patterns.Core
+namespace Design_Patterns.Core.Factory
 {
     class Factory : IPattern
     {

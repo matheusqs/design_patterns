@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Design_Patterns.Core
+namespace Design_Patterns.Core.Builder
 {
-    class CreatorFactory : Creator
+    class CreatorBuilder : Creator
     {
         public override IPattern createPattern()
         {
-            return new Factory();
+            return new Builder();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Design_Patterns.Core;
 using Design_Patterns.Core.Builder;
+using Design_Patterns.Core.Dependency_Injection;
 using Design_Patterns.Core.Factory;
 using Design_Patterns.Core.Singleton;
 using System;
@@ -16,6 +17,7 @@ namespace Design_Patterns
             Console.WriteLine("1 - Factory");
             Console.WriteLine("2 - Builder");
             Console.WriteLine("3 - Singleton");
+            Console.WriteLine("4 - Dependency Injection");
 
             var result = Console.ReadLine();
 
@@ -29,6 +31,9 @@ namespace Design_Patterns
                     break;
                 case "3":
                     creator = new CreatorSingleton();
+                    break;
+                case "4":
+                    creator = new CreatorDependency();
                     break;
                 default:
                     throw new Exception("Padrao nao implementado.");
